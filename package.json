@@ -1,0 +1,41 @@
+{
+    "name": "CupLang",
+    "displayName": "CupLang",
+    "description": "Language support for .cup files. Made for the Cup programming language. This language was made by coffee or Dolphin#6086 from Discord!",
+    "version": "0.1.2",
+    "icon": "Images/cuplang.png", 
+    "engines": {
+        "vscode": "^1.83.0"
+    },
+    "publisher": "JustMeCoffee",
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hadll/cup-VScode-language-support.git"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "cup",
+            "aliases": ["cup", "cup", "cup", "cup"],
+            "extensions": [".cup"],
+            "configuration": "./language-configuration.json",
+            "icon": {
+                "light": "Images/ccuplang-logo.png",
+                "dark": "Images/cuplang-logo.png"
+            }
+        }],
+        "grammars": [{
+            "language": "cup",
+            "scopeName": "source.cup",
+            "path": "./syntaxes/cup.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "cup",
+                "path": "./snippets/cup-snippets.json"
+            }
+        ]
+    }
+}

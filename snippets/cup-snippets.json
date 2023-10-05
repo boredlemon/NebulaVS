@@ -1,0 +1,228 @@
+{
+    "console": {
+        "prefix": "console",
+        "body": [
+            "console($0)"
+        ],
+        "description": "Print a string to the console"
+    },
+    "console_ret": {
+        "prefix": "console_ret",
+        "body": [
+            "console($0)"
+        ],
+        "description": "Description needed"
+    },
+    "input string": {
+        "prefix": "input_string",
+        "body": [
+            "io.read()$0"
+        ],
+        "description": "Requests input from the user and returns it as a string"
+    },
+    "input int": {
+        "prefix": "input_int",
+        "body": [
+            "tonumber(io.read())$0"
+        ],
+        "description": "Requests input from the user and returns it as an integer"
+    },
+    "Clear": {
+        "prefix": "clear",
+        "body": [
+            "os.execute('clear')"
+        ],
+        "description": "Clear the console"
+    },
+    "Cls": {
+        "prefix": "clear",
+        "body": [
+            "os.execute('clear')"
+        ],
+        "description": "Clear the console"
+    },
+    "is num": {
+        "prefix": "is_num",
+        "body": [
+            "type($0) == 'number'"
+        ],
+        "description": "Tests if the argument is a number"
+    },
+    "is str": {
+        "prefix": "is_str",
+        "body": [
+            "type($0) == 'string'"
+        ],
+        "description": "Tests if the argument is a string"
+    },
+    "is list": {
+        "prefix": "is_list",
+        "body": [
+            "type($0) == 'table'"
+        ],
+        "description": "Tests if the argument is a table"
+    },
+    "is function": {
+        "prefix": "is_function",
+        "body": [
+            "type($0) == 'function'"
+        ],
+        "description": "Tests if the argument is a function"
+    },
+    "append": {
+        "prefix": "append",
+        "body": [
+            "table.insert($0)"
+        ],
+        "description": "Adds an element to the end of a table"
+    },
+    "pop": {
+        "prefix": "pop",
+        "body": [
+            "table.remove($0)"
+        ],
+        "description": "Removes the item at the given table index"
+    },
+    "extend": {
+        "prefix": "extend",
+        "body": [
+            "for i, v in ipairs($0) do table.insert(self, v) end"
+        ],
+        "description": "Adds a table to the end of another table"
+    },
+    "len": {
+        "prefix": "len",
+        "body": [
+            "#$0"
+        ],
+        "description": "Returns the length of an indexable object"
+    },
+    "run": {
+        "prefix": "run",
+        "body": [
+            "-- Description needed"
+        ],
+        "description": "Description needed"
+    },
+    "null": {
+        "prefix": "nil",
+        "body": [
+            "nil"
+        ]
+    },
+    "false": {
+        "prefix": "false",
+        "body": [
+            "false"
+        ]
+    },
+    "true": {
+        "prefix": "true",
+        "body": [
+            "true"
+        ]
+    },
+    "pi": {
+        "prefix": "pi",
+        "body": [
+            "math.pi"
+        ]
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if $0 then"
+        ]
+    },
+    "elif": {
+        "prefix": "elseif",
+        "body": [
+            "elseif $0 then"
+        ]
+    },
+    "for": {
+        "prefix": "for",
+        "body": [
+            "for $0 do"
+        ]
+    },
+    "else": {
+        "prefix": "else",
+        "body": [
+            "else"
+        ]
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "while $0 do"
+        ]
+    },
+    "end": {
+        "prefix": "end",
+        "body": [
+            "end"
+        ]
+    },
+    "variable declaration": {
+        "prefix": "local",
+        "body": [
+            "local $0"
+        ],
+        "description": "Declares a variable"
+    },
+    "and": {
+        "prefix": "and",
+        "body": [
+            "$0 and"
+        ]
+    },
+    "or": {
+        "prefix": "or",
+        "body": [
+            "$0 or"
+        ]
+    },
+    "not": {
+        "prefix": "not",
+        "body": [
+            "not $0"
+        ]
+    },
+    "to": {
+        "prefix": "to",
+        "body": [
+            "to $0"
+        ]
+    },
+    "step": {
+        "prefix": "step",
+        "body": [
+            "step $0"
+        ]
+    },
+    "return": {
+        "prefix": "return",
+        "body": [
+            "return $0"
+        ]
+    },
+    "continue": {
+        "prefix": "goto continue",
+        "body": [
+            "goto continue"
+        ]
+    },
+    "break": {
+        "prefix": "goto break",
+        "body": [
+            "goto break"
+        ]
+    },
+    "function": {
+        "prefix": "function",
+        "body": [
+            "function $0"
+        ]
+    }
+}
