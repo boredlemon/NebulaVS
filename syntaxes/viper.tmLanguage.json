@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "cup",
+	"name": "viper",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -96,60 +96,60 @@
 		"repository": {
 			"keywords": {
 				"patterns": [{
-					"name": "keyword.control.cup",
+					"name": "keyword.control.vi",
 					"match": "\\b(if|while|for|return|then|elseif|else|and|or|not|to|step|end|continue|break)\\b"
 				}]
 			},
 			"strings": {
-				"name": "string.quoted.double.cup",
+				"name": "string.quoted.double.vi",
 				"begin": "\"",
 				"end": "\"",
 				"patterns": [
 					{
-						"name": "constant.character.escape.cup",
+						"name": "constant.character.escape.vi",
 						"match": "\\\\."
 					}
 				]
 			},
 			"comments": {
 				"patterns": [{
-					"name":"comment.line.cup",
+					"name":"comment.line.vi",
 					"begin": "--",
 					"end": "$\\n?"
 				}]
 			},
 			"numbers":{
 				"patterns": [{
-					"name": "constant.numeric.cup",
+					"name": "constant.numeric.vi",
 					"match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]*)?|\\.[0-9]+)\\b"
 				}]
 			},
 			"functions": {
 				"patterns": [{
-					"name": "entity.name.function.cup",
+					"name": "entity.name.function.vi",
 					"begin": "\\bfunction\\s+",
 					"end": "\\s*\\-\\>"
 				}]
 			},
 			"variables": {
 				"patterns": [{
-					"name": "variable.other.cup",
+					"name": "variable.other.vi",
 					"match": "\\bimport\\b"
 				}]
 			},
 			"builtins":{
 				"patterns": [{
-					"name": "support.function.cup",
+					"name": "support.function.vi",
 					"match": "\\b(console|print|while|for|return|then|elseif|else|and|or|not|to|step|end|continue|break)\\b"
 				}]
 			},
 			"constants":{
 				"patterns": [{
-					"name": "constant.language.cup",
+					"name": "constant.language.vi",
 					"match": "\\b(true|false|nil)\\b"
 				}]
 			}
 		},
-		"scopeName": "source.cup"
+		"scopeName": "source.vi"
 	}
 	

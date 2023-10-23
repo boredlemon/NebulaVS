@@ -1,6 +1,6 @@
-# cup README
+# viper README
 
-Simple syntax highlighting and code snippets for cup
+Simple syntax highlighting and code snippets for viper
 
 
 ## Features

@@ -1,9 +1,9 @@
 {
-    "name": "CupLang",
-    "displayName": "CupLang",
-    "description": "Language support for .cup files. Made for the Cup programming language. This language was made by coffee or Dolphin#6086 from Discord!",
+    "name": "ViperScript",
+    "displayName": "ViperLang",
+    "description": "Language support for .vi files (Viper)",
     "version": "0.1.2",
-    "icon": "Images/cuplang.png", 
+    "icon": "Images/viperscript.png", 
     "engines": {
         "vscode": "^1.83.0"
     },
@@ -13,28 +13,28 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/hadll/cup-VScode-language-support.git"
+        "url": "https://github.com/hadll/viper-VScode-language-support.git"
     },
     "contributes": {
         "languages": [{
-            "id": "cup",
-            "aliases": ["cup", "cup", "cup", "cup"],
-            "extensions": [".cup"],
+            "id": "viper",
+            "aliases": ["viper", "viper", "viper", "viper"],
+            "extensions": [".vi"],
             "configuration": "./language-configuration.json",
             "icon": {
-                "light": "Images/ccuplang-logo.png",
-                "dark": "Images/cuplang-logo.png"
+                "light": "Images/viperscript.png",
+                "dark": "Images/viperscript.png"
             }
         }],
         "grammars": [{
-            "language": "cup",
-            "scopeName": "source.cup",
-            "path": "./syntaxes/cup.tmLanguage.json"
+            "language": "viper",
+            "scopeName": "source.vi",
+            "path": "./syntaxes/viper.tmLanguage.json"
         }],
         "snippets": [
             {
-                "language": "cup",
-                "path": "./snippets/cup-snippets.json"
+                "language": "viper",
+                "path": "./snippets/viper-snippets.json"
             }
         ]
     }
