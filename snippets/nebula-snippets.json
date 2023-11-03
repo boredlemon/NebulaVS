@@ -1,15 +1,15 @@
 {
-    "console": {
-        "prefix": "console",
+    "print": {
+        "prefix": "print",
         "body": [
-            "console($0)"
+            "print($0)"
         ],
-        "description": "Print a string to the console"
+        "description": "Print a string to the print"
     },
-    "console_ret": {
-        "prefix": "console_ret",
+    "print_ret": {
+        "prefix": "print_ret",
         "body": [
-            "console($0)"
+            "print($0)"
         ],
         "description": "Description needed"
     },
@@ -32,14 +32,14 @@
         "body": [
             "os.execute('clear')"
         ],
-        "description": "Clear the console"
+        "description": "Clear the print"
     },
     "Cls": {
         "prefix": "clear",
         "body": [
             "os.execute('clear')"
         ],
-        "description": "Clear the console"
+        "description": "Clear the print"
     },
     "is num": {
         "prefix": "is_num",

@@ -1,40 +1,40 @@
 {
-    "name": "ViperScript",
-    "displayName": "ViperLang",
-    "description": "Language support for .vi files (Viper)",
-    "version": "0.1.2",
-    "icon": "Images/viperscript.png", 
+    "name": "NebulaScript",
+    "displayName": "NebulaScript",
+    "description": "The Nebula Programming Language",
+    "version": "2.0.0",
+    "icon": "Images/nebula.png", 
     "engines": {
         "vscode": "^1.83.0"
     },
-    "publisher": "JustMeCoffee",
+    "publisher": "Toast",
     "categories": [
         "Programming Languages"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/hadll/viper-VScode-language-support.git"
+        "url": "https://github.com/Nebulagigabyte/NebulaVSC"
     },
     "contributes": {
         "languages": [{
-            "id": "viper",
-            "aliases": ["viper", "viper", "viper", "viper"],
-            "extensions": [".vi"],
+            "id": "nebula",
+            "aliases": ["nebula", "nebula", "nebula", "nebula"],
+            "extensions": [".nb"],
             "configuration": "./language-configuration.json",
             "icon": {
-                "light": "Images/viperscript.png",
-                "dark": "Images/viperscript.png"
+                "light": "Images/nebula.png",
+                "dark": "Images/nebula.png"
             }
         }],
         "grammars": [{
-            "language": "viper",
-            "scopeName": "source.vi",
-            "path": "./syntaxes/viper.tmLanguage.json"
+            "language": "nebula",
+            "scopeName": "source.nb",
+            "path": "./syntaxes/nebula.tmLanguage.json"
         }],
         "snippets": [
             {
-                "language": "viper",
-                "path": "./snippets/viper-snippets.json"
+                "language": "nebula",
+                "path": "./snippets/nebula-snippets.json"
             }
         ]
     }

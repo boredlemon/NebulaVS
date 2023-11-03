@@ -1,6 +1,6 @@
-# viper README
+# nebula README
 
-Simple syntax highlighting and code snippets for viper
+Simple syntax highlighting and code snippets for nebula
 
 
 ## Features

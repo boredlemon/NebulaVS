@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "viper",
+	"name": "nebula",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -96,60 +96,60 @@
 		"repository": {
 			"keywords": {
 				"patterns": [{
-					"name": "keyword.control.vi",
+					"name": "keyword.control.nb",
 					"match": "\\b(if|while|for|return|then|elseif|else|and|or|not|to|step|end|continue|break)\\b"
 				}]
 			},
 			"strings": {
-				"name": "string.quoted.double.vi",
+				"name": "string.quoted.double.nb",
 				"begin": "\"",
 				"end": "\"",
 				"patterns": [
 					{
-						"name": "constant.character.escape.vi",
+						"name": "constant.character.escape.nb",
 						"match": "\\\\."
 					}
 				]
 			},
 			"comments": {
 				"patterns": [{
-					"name":"comment.line.vi",
+					"name":"comment.line.nb",
 					"begin": "--",
 					"end": "$\\n?"
 				}]
 			},
 			"numbers":{
 				"patterns": [{
-					"name": "constant.numeric.vi",
+					"name": "constant.numeric.nb",
 					"match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]*)?|\\.[0-9]+)\\b"
 				}]
 			},
 			"functions": {
 				"patterns": [{
-					"name": "entity.name.function.vi",
+					"name": "entity.name.function.nb",
 					"begin": "\\bfunction\\s+",
 					"end": "\\s*\\-\\>"
 				}]
 			},
 			"variables": {
 				"patterns": [{
-					"name": "variable.other.vi",
+					"name": "variable.other.nb",
 					"match": "\\bimport\\b"
 				}]
 			},
 			"builtins":{
 				"patterns": [{
-					"name": "support.function.vi",
-					"match": "\\b(console|print|while|for|return|then|elseif|else|and|or|not|to|step|end|continue|break)\\b"
+					"name": "support.function.nb",
+					"match": "\\b(print|print|while|for|return|then|elseif|else|and|or|not|to|step|end|continue|break)\\b"
 				}]
 			},
 			"constants":{
 				"patterns": [{
-					"name": "constant.language.vi",
+					"name": "constant.language.nb",
 					"match": "\\b(true|false|nil)\\b"
 				}]
 			}
 		},
-		"scopeName": "source.vi"
+		"scopeName": "source.nb"
 	}
 	
